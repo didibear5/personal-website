@@ -69,6 +69,10 @@ $(function(){
 		return false;
 	});
 
+	//
+	$("#nav-modal").removeClass('display_none');
+	$("#project-modal").removeClass('display_none');
+	$("#img-modal").removeClass('display_none');
 
 	// Modal
 	var $panel = $(".panel");
