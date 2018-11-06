@@ -84,7 +84,7 @@ $(function(){
 		// Get img url
 		var bg = $(this).css('background-image');
 		bg = bg.replace('url(','').replace(')','');
-		$(".modal-content").prepend(`<img src= ${bg} style="width: 100%">`);
+		$("#img-modal .modal-content").prepend(`<img src= ${bg} style="width: 100%">`);
 
 	});
 	$(".project-img").on('click', function(event) {
@@ -98,7 +98,7 @@ $(function(){
 		event.preventDefault();
 		if($("#img-modal").hasClass('visible')){
 			$("#img-modal").addClass('hide').removeClass('visible');
-			$(".modal-content img").remove();//remove img url
+			$("#img-modal img").remove();//remove img url
 		}
 		if($("#project-modal").hasClass('visible')){
 			$("#project-modal").addClass('hide').removeClass('visible');
@@ -116,7 +116,7 @@ $(function(){
 		if (event.target == imgModal) {
 			$("#img-modal").addClass('hide').removeClass('visible');
 			$("body").removeClass('modal-open');
-			$(".modal-content img").remove();//remove img url
+			$("#img-modal img").remove();//remove img url
 		}
 		else if(event.target == navModal){
 			$("#nav-modal").addClass('hide').removeClass('visible');
