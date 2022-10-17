@@ -1,5 +1,16 @@
-#忽略ps、ai檔
-*.psd
-*.ai
-#忽略yml檔
-*.yml
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# debug
+npm-debug.log*
+
+# Next.js build output
+.next
+
+package-lock.json
+
+# husky script
+.husky
